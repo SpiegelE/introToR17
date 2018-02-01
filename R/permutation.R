@@ -28,3 +28,7 @@ permute_vector <- function(x) {
     return(res)
   }
 }
+
+love_me<-function(){
+  return("Ich habe dich lieb!")
+}
