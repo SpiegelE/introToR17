@@ -19,7 +19,7 @@ permute_vector <- function(x) {
       tmp <- y[1]
       y[1] <- y[i]
       y[i] <- tmp
-
+      y[1] <- y[1]+1
       # calculate all permutations of y[2:n]
       col_idx <- (i-1) * num_sub_permutation + seq(1:num_sub_permutation)
       res[1, col_idx] <- y[1]
